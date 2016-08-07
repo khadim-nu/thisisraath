@@ -1,0 +1,917 @@
+@charset "UTF-8";
+/*
+* OneMark Pro
+*/
+/* Table of Content
+==================================================
+  - General -
+  - Cover -
+  - Features -
+  - Why Us -
+  - Customers -
+  - Pricing -
+  - Team -
+  - Blog -
+  - Contact -
+  - Footer -
+  - Responsive Styles -
+*/
+
+
+/* - General ------------------------------------------------------- */
+
+html {
+  -webkit-text-size-adjust: none;
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+.btn {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+          border-radius: 0;
+}
+
+.btn-primary:hover {
+  background-color: #f0775a;
+}
+
+.btn-default:hover {
+  border-color: #ef6b4c;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+h4, .h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+h4 a, .h4 a {
+  color: #535671;
+}
+
+h4 a:hover, .h4 a:hover {
+  color: #535671;
+  text-decoration: underline;
+}
+
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* No animations bellow IE10 */
+
+.lt-ie10 .animating,
+.lt-ie10 .animating-2,
+.lt-ie10 .animating-3 {
+  opacity: 1;
+}
+
+/* Animation used from Animate.css - https://daneden.github.io/animate.css/ */
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+            transform: translate3d(0, -50px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+
+.animating,
+.animating-2,
+.animating-3 {
+  opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+/* - Cover ------------------------------------------------------- */
+
+.cover {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+.cover .hero-img-preload {
+  display: none;
+}
+
+.cover .custom-navbar {
+  padding-top: 20px;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-transition: .4s;
+          transition: .4s;
+  background-color: transparent;
+}
+
+.cover .navbar-wrapper {
+  display: table;
+  width: 100%;
+}
+
+.cover .logo-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.cover .logo {
+  padding: 0 0 0 10px;
+  margin: 0;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cover #logo-mark {
+  vertical-align: middle;
+}
+
+.cover #logo-mark g {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.cover .hamburger {
+  margin-right: 0;
+  border-color: transparent;
+  z-index: 2;
+}
+
+.cover .hamburger:hover,
+.cover .hamburger:focus {
+  background-color: transparent;
+}
+
+.cover .menu-wrapper {
+  display: none;
+}
+
+.cover .menu .btn-subscribe {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.cover .menu li.active a {
+  background-color: transparent !important;
+}
+
+.cover .modal-menu {
+  position: fixed;
+  border: none;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  box-shadow: none;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+          transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: hidden;
+}
+
+.cover .modal-menu.in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cover .menu-list {
+  margin: 60px auto 0 auto;
+  padding: 0;
+  width: 280px;
+  text-align: center;
+  list-style: none;
+}
+
+.cover .menu-list a {
+  font-size: 20px;
+  padding: 0;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.cover .custom-jumbotron {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cover h1 {
+  color: #ffffff;
+}
+
+.cover .small-intro {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.cover .btn-hero-play {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 700;
+}
+.cover .btn-hero-primary {
+    color: #ffffff;
+    background-color: #00c896;
+    border-color: transparent;
+    padding: 10px 22px;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.cover .play-icon {
+  padding: 0 10px 0 0;
+  height: 50px;
+}
+
+
+/* - Features ------------------------------------------------------- */
+
+.features {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features .feature-item {
+  margin-top: 30px;
+}
+
+.features .feature-item:first-child {
+  margin-top: 0;
+}
+
+.features img {
+  margin: 0 0 15px 0;
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+
+/* - Why Us ------------------------------------------------------- */
+
+.why-us {
+  background-color: #eff0f4;
+  text-align: center;
+  overflow: hidden;
+}
+
+.why-us img {
+  width: auto;
+  display: none;
+}
+
+.why-us p {
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+.why-us .column-wrapper {
+  padding: 50px 0;
+}
+
+
+/* - Customers ------------------------------------------------------- */
+
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.customers .testimonial {
+  margin: 40px 0 20px 0;
+}
+
+.customers .small-separator {
+  width: 60px;
+  height: 5px;
+  background-color: #eff0f4;
+  margin: 0 auto;
+}
+
+.customers p {
+  font-style: italic;
+  margin: 25px 0;
+}
+
+.customers img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.customers h4 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.customers .position {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+/* - Pricing ------------------------------------------------------- */
+
+.pricing-plans {
+  background-color: #eff0f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pricing-plans h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pricing-plans .plan {
+  margin: 20px 0 0 0;
+}
+
+.pricing-plans .plan-wrapper {
+  padding: 30px 20px 40px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #dfdfe4;
+}
+
+.pricing-plans .price {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #535671;
+}
+
+.pricing-plans .price sup {
+  top: -2.0em;
+  font-size: 110%;
+}
+
+.pricing-plans .price .ammount {
+  font-size: 40px;
+  line-height: 20px;
+}
+
+.pricing-plans .price sub {
+  bottom: 0;
+  font-size: 110%;
+}
+
+.pricing-plans .big-separator {
+  height: 20px;
+  background-color: #eff0f4;
+  margin-top: 15px;
+}
+
+.pricing-plans .plan-highlighted .big-separator {
+  background-color: #fbefc0;
+}
+
+.pricing-plans ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-plans .list-group-item {
+  border: none;
+  padding: 0 0 0 20px;
+}
+
+.pricing-plans .included {
+  color: #535671;
+  background-image: url("../images/check-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.pricing-plans .not-included {
+  color: #dbdce1;
+  background-image: url("../images/cross-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+
+/* - Team ------------------------------------------------------- */
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.team .member {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.team img {
+  border-radius: 50%;
+  width: 128px;
+  margin: 0 auto;
+}
+
+.team h4 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.team .position {
+  font-size: 16px;
+  margin: 0;
+  font-style: none;
+}
+
+
+/* - Blog ------------------------------------------------------- */
+
+.blog {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid #eff0f4;
+}
+
+.blog h2 {
+  text-align: center;
+}
+
+.blog .article {
+  margin: 50px 0;
+  padding: 0;
+}
+
+.blog .article-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.blog .time {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+/* - Contact ------------------------------------------------------- */
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #eff0f4;
+  text-align: center;
+}
+
+.contact .get-in-touch p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contact .follow-us {
+  margin-top: 50px;
+}
+
+.contact .follow-us .column-wrapper {
+  margin: 0 auto;
+}
+
+.contact .icons {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact .social-icon {
+  margin-top: 22px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+}
+
+
+/* - Footer ------------------------------------------------------- */
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e0e2eb;
+}
+
+footer .copyright {
+  font-size: 16px;
+  color: #878aa1;
+  line-height: 48px;
+}
+
+footer .footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+}
+
+footer .footer-menu li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+footer .footer-menu a {
+  color: #535671;
+}
+
+footer .footer-menu a:hover {
+  text-decoration: underline;
+}
+
+
+/* - Responsive Styles ------------------------------------------------------- */
+
+
+
+
+
+/* 8888888888  .d8888b.   .d8888b.  
+//       d88P d88P  Y88b d88P  Y88b 
+//      d88P         888 Y88b. d88P 
+//     d88P        .d88P  "Y88888"  
+//  88888888   .od888P"  .d8P""Y8b. 
+//   d88P     d88P"      888    888 
+//  d88P      888"       Y88b  d88P 
+// d88P       888888888   "Y8888P" */
+
+
+
+
+@media (min-width: 768px) {
+  .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cover .logo {
+    padding: 0;
+  }
+  .cover .menu-list {
+    margin: 120px auto 0 auto;
+  }
+  .cover .menu-list a {
+    line-height: 48px;
+    font-size: 28px;
+  }
+  .cover .custom-jumbotron {
+    width: 740px;
+    left: 50%;
+    margin: 0 0 0 -370px;
+    padding: 0 10px;
+  }
+  .cover h1 {
+    font-size: 67px;
+  }
+  .cover .small-intro {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .cover .btn-hero-play {
+    font-size: 24px;
+  }
+  .cover .play-icon {
+    padding: 0 15px 0 0;
+    height: 66px;
+  }
+  .features {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .why-us {
+    text-align: left;
+  }
+  .why-us .column-wrapper {
+    padding: 70px 30px 70px 0;
+  }
+  .why-us img {
+    display: inline-block;
+  }
+  .customers {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pricing-plans {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .team {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .team img {
+    width: 156px;
+  }
+  .blog {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .blog .article {
+    margin: 40px 0 0 0;
+  }
+  .blog .article-wrapper {
+    width: 220px;
+  }
+  .contact {
+    @media (min-width: 768px)
+.cover .btn-hero-primary {
+    padding: 15px 28px;
+    font-size: 24px;
+}
+.cover .btn-hero-primary {
+    color: #ffffff;
+    background-color: #00c896;
+    border-color: transparent;
+    padding: 10px 22px;
+    font-size: 20px;
+}
+}
+
+
+
+
+
+/*  .d8888b.   .d8888b.   .d8888b.  
+// d88P  Y88b d88P  Y88b d88P  Y88b 
+// 888    888 888    888        888 
+// Y88b. d888 Y88b. d888      .d88P 
+//  "Y888P888  "Y888P888  .od888P"  
+//        888        888 d88P"      
+// Y88b  d88P Y88b  d88P 888"       
+//  "Y8888P"   "Y8888P"  888888888 */
+
+
+
+
+@media (min-width: 992px) {
+  .cover .menu-wrapper {
+    display: table-cell !important;
+    vertical-align: middle;
+    position: static;
+    height: auto !important;
+    background-color: transparent;
+    opacity: 1;
+  }
+  .cover .custom-navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cover .logo {
+    padding: 0 0 0 10px;
+  }
+  .cover .menu {
+    width: auto;
+    margin: 0;
+  }
+  .cover .menu li {
+    margin: 0 0 0 20px;
+  }
+  .cover .menu .active {
+    border-bottom: 3px solid #ffffff;
+  }
+  .cover .menu a {
+    font-size: 16px;
+    line-height: 38px;
+    padding: 2px 0;
+  }
+  .cover .menu .btn-subscribe {
+    font-family: "Work Sans", sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    margin: 0;
+    padding: 2px 15px;
+  }
+  .cover .modal-menu.in {
+    visibility: hidden;
+  }
+  .cover .custom-jumbotron {
+    width: 960px;
+    margin: 0 0 0 -480px;
+  }
+  .cover .small-intro {
+    width: 650px;
+    margin: 20px auto 40px auto;
+    float: none;
+  }
+  .features {
+    text-align: left;
+  }
+  .features .feature-item {
+    margin-top: 0;
+  }
+  .features .feature-icon {
+    display: table-cell;
+  }
+  .features .feature-details {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 40px;
+  }
+  .features p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .why-us .column-wrapper {
+    padding: 90px 40px 90px 0;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: left;
+  }
+  .customers .small-separator {
+    margin: 0;
+  }
+  .customers .avatar {
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+  .customers .details {
+    display: table;
+  }
+  .customers .position {
+    font-size: 14px;
+  }
+  .pricing-plans {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .pricing-plans h2 {
+    text-align: left;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: left;
+  }
+  .team img {
+    width: 128px;
+  }
+  .team .position {
+    font-size: 14px;
+  }
+  .blog {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .blog .article-wrapper {
+    width: auto;
+  }
+  .blog .article {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .blog h2 {
+    text-align: left;
+  }
+  .blog .time {
+    font-size: 14px;
+  }
+  .contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: left;
+  }
+  .contact .get-in-touch p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .contact .follow-us {
+    margin-top: 0;
+  }
+  .contact .follow-us .column-wrapper {
+    width: auto;
+    margin: 0;
+  }
+  .contact .social-icon {
+    text-align: left;
+    padding: 10px 5px 0 0;
+  }
+  footer .copyright {
+    font-size: 14px;
+    float: left;
+  }
+  footer .footer-menu {
+    float: right;
+  }
+  footer .footer-menu ul {
+    line-height: 48px;
+  }
+}
+
+
+
+
+
+/*  d888    .d8888b.   .d8888b.   .d8888b.  
+// d8888   d88P  Y88b d88P  Y88b d88P  Y88b 
+//   888          888 888    888 888    888 
+//   888        .d88P 888    888 888    888 
+//   888    .od888P"  888    888 888    888 
+//   888   d88P"      888    888 888    888 
+//   888   888"       Y88b  d88P Y88b  d88P 
+// 8888888 888888888   "Y8888P"   "Y8888P" */
+
+
+
+
+@media (min-width: 1200px) {
+  .cover .custom-jumbotron {
+    width: 1160px;
+    margin: 0 0 0 -580px;
+  }
+  .features {
+    padding: 120px 0;
+  }
+  .why-us .column-wrapper {
+    padding: 120px 120px 120px 0;
+  }
+  .pricing-plans .price .ammount {
+    font-size: 32px;
+    line-height: 20px;
+  }
+  .team img {
+    width: 156px;
+  }
+  .contact .social-icon {
+    padding: 10px 20px 0 0;
+  }
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: #000000;
+}

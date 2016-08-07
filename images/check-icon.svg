@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8.687" viewBox="0 0 12 8.687">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #535671;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="checkmark" class="cls-1" d="M124.754,402.375a0.787,0.787,0,0,1-.558-0.231l-3.3-3.294a0.789,0.789,0,0,1,1.116-1.116l2.738,2.737,6.56-6.558a0.789,0.789,0,1,1,1.116,1.115l-7.119,7.116A0.783,0.783,0,0,1,124.754,402.375Z" transform="translate(-120.688 -393.688)"/>
+</svg>
