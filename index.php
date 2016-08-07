@@ -337,7 +337,7 @@
           <div class="row">
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -346,7 +346,7 @@
             </div>
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -355,7 +355,7 @@
             </div>
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -364,7 +364,7 @@
             </div>
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -373,7 +373,7 @@
             </div>
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -382,7 +382,7 @@
             </div>
             <div class="member col-sm-4 col-md-2">
               <div class="member-photo">
-                <img src="images/raath.jpg" alt="Khadim Raath">
+                <img src="<?= $server; ?>images/raath.jpg" alt="Khadim Raath">
               </div>
               <div class="member-details">
                 <h4><a href="#">Khadim Raath</a></h4>
@@ -404,7 +404,7 @@
           <div class="row">
             <article class="article col-sm-4 col-md-4">
               <div class="article-wrapper">
-                <img class="img-responsive" src="images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
+                <img class="img-responsive" src="<?= $server; ?>images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
                 <div class="time">2 days ago</div>
                 <h4><a href="http://corgloenterprise.com/">CorGlo-Enterprise For Everything in Entertainment</a></h4>
                 <div class="btn btn-md btn-default">Read article</div>
@@ -412,7 +412,7 @@
             </article>
              <article class="article col-sm-4 col-md-4">
               <div class="article-wrapper">
-                <img class="img-responsive" src="images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
+                <img class="img-responsive" src="<?= $server; ?>images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
                 <div class="time">2 days ago</div>
                 <h4><a href="http://corgloenterprise.com/">CorGlo-Enterprise For Everything in Entertainment</a></h4>
                 <div class="btn btn-md btn-default">Read article</div>
@@ -420,7 +420,7 @@
             </article>
              <article class="article col-sm-4 col-md-4">
               <div class="article-wrapper">
-                <img class="img-responsive" src="images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
+                <img class="img-responsive" src="<?= $server; ?>images/corglo-logo.png" alt="CorGlo-Enterprise For Everything in Entertainment" />
                 <div class="time">2 days ago</div>
                 <h4><a href="http://corgloenterprise.com/">CorGlo-Enterprise For Everything in Entertainment</a></h4>
                 <div class="btn btn-md btn-default">Read article</div>
