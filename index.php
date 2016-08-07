@@ -442,7 +442,6 @@
                 <p>Have questions? Our team is here to help. <br> Call <strong>+92 320 8822399</strong> Monday to Friday from 8 am to 8 pm GMT.</p>
                 <p>Email :  <strong>Khadim.nu@gmail.com</strong></p>
                 <p>Skype :  <strong>Khadim.Raath</strong></p>
-                <a href="#" class="btn btn-lg btn-primary">Send an email</a>
               </div>
             </div>
             <div class="follow-us col-sm-12 col-md-6">
@@ -471,6 +470,11 @@
               </div>
             </div>
           </div>
+          <div class="column-wrapper sendEmailWraper">
+                <input class="btn-lg sendEmail" type="text" name="name" placeholder="Your Name" required="">
+                <input class="btn-lg sendEmail" type="email" name="email" placeholder="Your Email" required="">
+                <a href="#" class="btn btn-lg btn-primary">Send an email</a>
+              </div>
         </div>
       </div>
     </main>
