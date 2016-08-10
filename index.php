@@ -1,5 +1,5 @@
 <?php
-  $server='http://'.$_SERVER['HTTP_HOST']."/thisisraath/";
+  $server='';//'http://'.$_SERVER['HTTP_HOST']."/thisisraath/";
 ?>
 
 
