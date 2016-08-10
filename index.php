@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="OneMark Pro Responsive Bootstrap Landing Page Template">
+    <meta name="description" content="thisisraath.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Title -->
@@ -506,11 +506,11 @@
       </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="<?= $server; ?>js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual
     files as needed -->
-    <script src="https://d2zrsw3u8lkijg.cloudfront.net/themeforest/onemark-pro/version-3/js/bootstrap.min.js"></script>
-    <script src="https://d2zrsw3u8lkijg.cloudfront.net/themeforest/onemark-pro/version-3/js/jquery.easing.min.js"></script>
-    <script src="https://d2zrsw3u8lkijg.cloudfront.net/themeforest/onemark-pro/version-3/js/waypoint.js"></script>
-    <script src="https://d2zrsw3u8lkijg.cloudfront.net/themeforest/onemark-pro/version-3/js/main-1.0.js"></script>
+    <script src="<?= $server; ?>js/bootstrap.min.js"></script>
+    <script src="<?= $server; ?>js/jquery.easing.min.js"></script>
+    <script src="<?= $server; ?>js/waypoint.js"></script>
+    <script src="<?= $server; ?>js/main-1.0.js"></script>
 </body></html>
